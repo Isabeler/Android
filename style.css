@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* Font externa*/
+@font-face {
+  font-family: 'Android';
+  src: url(fontes/idroid.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Variavéis*/
+:root {
+  --font-bebas: 'Bebas Neue', cursive;
+  --font-arial: 'Arial';
+  --font-android: 'Android';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  background-color: #83e1ad;
+  font-weight: bold;
+}
+
+body p {
+  text-indent: 20px;
+}
+
+/* Header*/
+
+header {
+  background-image: linear-gradient(to bottom, #3ddc84, #2fa866, #063d1e);
+}
+
+header h1 {
+  font-family: var(--font-bebas);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  padding-top: 35px;
+}
+
+header p {
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  padding-top: 20px;
+  line-height: 1.8em;
+}
+
+header p,
+nav {
+  color: white;
+}
+
+/* Nav*/
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+/* Main*/
+
+main {
+  background-color: white;
+
+  margin: auto;
+  padding: 20px;
+  box-shadow: 1px 1px 7px #063d1e;
+  border-radius: 0px 0px 10px 10px;
+  min-width: 300px;
+  max-width: 830px;
+}
+
+main h1,
+h2 {
+  font-family: var(--font-android);
+  color: #063d1e;
+  padding-left: 10px;
+}
+
+main h2 {
+  background-image: linear-gradient(to right, #c5ebd6, white);
+}
+
+main p {
+  line-height: 1.5em;
+}
+
+.image {
+  text-align: center;
+}
+
+main h1,
+h2,
+p,
+img,
+.video,
+aside,
+main {
+  margin-bottom: 20px;
+}
+
+main p,
+header p,
+nav,
+aside,
+footer {
+  font-family: var(--font-arial);
+}
+
+main span,
+a,
+aside a {
+  color: #2fa866;
+  text-decoration: none;
+}
+
+div.video {
+  position: relative;
+  background-color: #063d1e;
+  height: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 15px;
+  padding-bottom: 59%;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+/* Aside*/
+
+aside {
+  background-color: #c5ebd6;
+  border-radius: 10px;
+}
+
+aside h3 {
+  background-color: #2fa866;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside p {
+  padding: 10px;
+  font-size: 1em;
+  padding-left: 15px;
+}
+
+aside ul,
+aside li {
+  list-style-type: '\2714\0020\0020';
+  columns: 2;
+  list-style-position: inside;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #063d1e;
+  padding: 5px;
+  color: #c5ebd6;
+  font-weight: normal;
+  text-align: center;
+}
+
+footer span {
+  color: white;
+}
